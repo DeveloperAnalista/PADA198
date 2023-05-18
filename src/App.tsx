@@ -1,17 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Cadastro from './pages/Cadastro'
+import Router from './router/Router'
 
 function App() {
 
   return (    
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="cadastro" element={<Cadastro />}/>
-        </Routes>
-      </BrowserRouter>
-    
+      <Router />
   )
 }
 

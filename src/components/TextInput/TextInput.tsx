@@ -1,6 +1,5 @@
 import { FC, InputHTMLAttributes } from 'react';
 import { Input } from "./TextInput.styles";
-import { FaUserCircle } from 'react-icons/fa';
 
 interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
     placeholder?: string;
@@ -10,12 +9,12 @@ interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 
-const TextInput: FC<TextInputProps> = ({placeholder, type, value, onBlur, onChange, error}) => {
+const TextInput: FC<TextInputProps> = ({ placeholder, type, value, onBlur, onChange, error }) => {
     return (
-    <>
-        <Input type={type} placeholder={placeholder} onChange={onChange} onBlur={onBlur}  value={value} />
-        {error && <p>{error}</p>}
-    </>
+        <>
+            <Input type={type} placeholder={placeholder} onChange={onChange} onBlur={onBlur} value={value} />
+            {error && <p>{error}</p>}
+        </>
     )
 }
 
