@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "baseUrl":".",
+    "paths": {
+      "*": ["*", "dist/*"]
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
