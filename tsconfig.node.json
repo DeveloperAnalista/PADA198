@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl":".",
-    "paths":{
-      "jquery":["node_modules/jquery/dist/jquery"]}
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
